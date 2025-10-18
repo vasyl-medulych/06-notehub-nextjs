@@ -14,7 +14,7 @@ const NoteSchema = Yup.object().shape({
     .min(3, "Please enter min 3 symbols")
     .max(50, "Maximum 50 symbols")
     .required("Title is required"),
-  content: Yup.string().max(500, "Maximum 50 symbols"),
+  content: Yup.string().max(500, "Maximum 500 symbols"),
   tag: Yup.string()
     .oneOf(["Todo", "Work", "Personal", "Meeting", "Shopping"], "Invalid tag")
     .required("Tag is required"),
